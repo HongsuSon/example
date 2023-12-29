@@ -1,0 +1,142 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+ul{list-style: none;}
+a{text-decoration: none; color: #333; display: block;}
+
+/* reset end */
+
+header, section, footer{
+    width: 100%;
+    position: relative;
+    float: left;
+}
+
+.box{
+    width: 300px;
+    height: 300px;
+    background-color: cornflowerblue;
+    position: absolute;
+    top: 50%;
+    margin-top: -150px;
+}
+
+/* common end */
+
+#wrap{
+    width: 100%;
+}
+
+header{
+    height: 80px;
+    background-color: antiquewhite;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    line-height: 40px;
+}
+
+#logo{
+    width: 120px;
+    background-color: crimson;
+    text-align: center;
+}
+
+#gnb{
+    width: 900px;
+    background-color: palegreen;
+    display: flex;
+
+}
+
+#gnb>li{
+    width: 25%;
+    text-align: center;
+}
+/* header end */
+
+#section_1{
+    height: 90vh;
+    background-color: tan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: column;
+}
+
+#section_1>h1{
+    font-size: 80px;
+    margin-bottom: 5px;
+    transform: translateY(70px);
+    animation: title_move 1s forwards;
+    opacity: 0;
+}
+
+#section_1>p{
+    font-size: 20px;
+    transform: translateY(70px);
+    animation: title_move 0.8s 0.2s forwards;
+    opacity: 0;
+}
+
+@keyframes title_move{
+    to{
+        transform: translateY(70px);
+        opacity: 1;
+    }
+}
+
+#section_2{
+    height: 400px;
+    background-color: pink;
+    margin: 100px 0;
+}
+
+#box_1{
+    left: 30%;
+    margin-left: -150px;
+}
+/* section_2 end */
+
+#section_3{
+    height: 600px;
+    background-color: tan;
+    margin-bottom: 100px;
+}
+
+#box_2{
+    top: 70%;
+    left: 30%;
+    opacity: 0;
+}
+
+#box_3{
+    top: 70%;
+    left: 55%;
+    opacity: 0;
+}
+/* section_3 end */
+
+footer{
+    height: 120px;
+    background-color: lavenderblush;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+top_btn{
+    width: 80px;
+    height: 80px;
+    background-color: coral;
+    position: fixed;
+    bottom: 60px;
+    right: 60px;
+    font: 900 24px/80px '';
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
